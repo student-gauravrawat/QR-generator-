@@ -22,3 +22,12 @@ function generateQR(){
 btn.addEventListener("click", ()=>{
        generateQR();
 });
+
+
+
+qrText.addEventListener('keyup', (e)=>{
+    if(e.keyCode === 13){
+   generateQR();
+    
+    }
+})
